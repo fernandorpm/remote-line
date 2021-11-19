@@ -1,15 +1,47 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+body {
+  margin: 0;
+  background-color: whitesmoke;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+#qrcode-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+#qrcode-container > div {
+  max-width: 500px;
+  max-height: 500px;
+  padding: 30px;
+  background-color: white;
+  border: 3px solid #e4e4e4;
+  border-radius: 10px;
+}
+
+#navbar-desktop {
+  padding: 20px 0;
+  position: fixed;
+  width: 240px;
+  height: 100vh;
+  background-color: white;
+}
+
+.navbar-link {
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+}
+
+.navbar-link:hover {
+  background-color: blue;
+}
